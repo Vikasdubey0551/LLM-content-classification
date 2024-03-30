@@ -1,0 +1,19 @@
+model_path: "model/yarn-mistral-7b-128k.Q4_K_M.gguf"
+temperature: 0.1
+max_tokens: 150
+IAB_categories: true
+Age_groups: true
+Income: true
+Gender: false
+Topics: true
+struct:
+  IAB_categories: ["IAB1", "IAB2", "IAB3"]
+  Age_groups: ["Adult", "Teen"]
+  Income: ["high"]
+  Gender: ["Male"]
+  Topics: ["Topic1", "Topic2"]
+verbose: false
+host: "http://localhost:8000"
+
+
+

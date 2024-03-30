@@ -1,0 +1,4 @@
+llama-cpp-python==0.2.56
+pyyaml==0.6.1
+typing==3.7.4.3
+genson==1.2.2

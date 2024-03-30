@@ -55,11 +55,11 @@ classification_config = {
         }
     }
 
-    content = """Villa living embodies a unique blend of luxury, comfort, and tranquility, offering a haven away from the hustle and bustle of city life. Nestled amidst serene landscapes or perched on scenic coastal cliffs, villas beckon those seeking a retreat where relaxation and rejuvenation are paramount"""
+  content = """Villa living embodies a unique blend of luxury, comfort, and tranquility, offering a haven away from the hustle and bustle of city life. Nestled amidst serene landscapes or perched on scenic coastal cliffs, villas beckon those seeking a retreat where relaxation and rejuvenation are paramount"""
 
-    classifier = LLMClassifier(classification_config)
-    response = classifier.get_response(content)
-    print(json.dumps(response, indent=2))
+  classifier = LLMClassifier(classification_config)
+  response = classifier.get_response(content)
+  print(json.dumps(response, indent=2))
 ```
 The output is as follows:
 

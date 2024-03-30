@@ -1,7 +1,7 @@
 ## Content Classification Using LLM
-content classificiation is an important task across various industries. In this repository, I explore content classification using 
+Content classificiation is an important task across various industries. In this repository, I explore content classification using 
 using quantized Large Language models (LLMs) and LLama-cpp. The goals are as follows:
-* Perform content classifications on
+* Perform content classifications on URL/text content.
 * Only CPU for the task.
 * Strict JSON responses with minimum variabilty.
 * Assess the quality of the prediction.
@@ -55,11 +55,11 @@ classification_config = {
         }
     }
 
-  content = """Villa living embodies a unique blend of luxury, comfort, and tranquility, offering a haven away from the hustle and bustle of city life. Nestled amidst serene landscapes or perched on scenic coastal cliffs, villas beckon those seeking a retreat where relaxation and rejuvenation are paramount"""
+content = """Villa living embodies a unique blend of luxury, comfort, and tranquility, offering a haven away from the hustle and bustle of city life. Nestled amidst serene landscapes or perched on scenic coastal cliffs, villas beckon those seeking a retreat where relaxation and rejuvenation are paramount"""
 
-  classifier = LLMClassifier(classification_config)
-  response = classifier.get_response(content)
-  print(json.dumps(response, indent=2))
+classifier = LLMClassifier(classification_config)
+response = classifier.get_response(content)
+print(json.dumps(response, indent=2))
 ```
 The output is as follows:
 

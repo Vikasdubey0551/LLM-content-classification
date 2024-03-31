@@ -14,7 +14,7 @@ classification_config = {
     },
 }
 
-if __name__ == "__main":
+if __name__ == "__main__":
 
     content = """Villa living embodies a unique blend of luxury, comfort, and tranquility, offering a haven 
     away from the hustle and bustle of city life. Nestled amidst serene landscapes or perched on scenic coastal cliffs, 

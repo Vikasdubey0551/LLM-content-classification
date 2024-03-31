@@ -14,6 +14,7 @@ class LLMClassifier:
             model_path=self.config.get("model_path", ""),
             chat_format="chatml",
             verbose=self.config.get("verbose", False),
+            seed=0,
         )
 
     def _generate_schema(self) -> Dict:
